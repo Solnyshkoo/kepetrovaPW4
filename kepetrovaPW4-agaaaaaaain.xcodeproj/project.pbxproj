@@ -13,6 +13,11 @@
 		5E7551652729EDE300245E9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E7551632729EDE300245E9A /* Main.storyboard */; };
 		5E7551672729EDE400245E9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E7551662729EDE400245E9A /* Assets.xcassets */; };
 		5E75516A2729EDE400245E9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E7551682729EDE400245E9A /* LaunchScreen.storyboard */; };
+		5E7551722729F3F600245E9A /* NoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7551712729F3F600245E9A /* NoteCell.swift */; };
+		5E7551742729F55200245E9A /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7551732729F55200245E9A /* NoteViewController.swift */; };
+		5E7551772729F83100245E9A /* CoreDataNotes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5E7551752729F83100245E9A /* CoreDataNotes.xcdatamodeld */; };
+		5E75517A2729F92400245E9A /* Note+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7551782729F92400245E9A /* Note+CoreDataClass.swift */; };
+		5E75517B2729F92400245E9A /* Note+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7551792729F92400245E9A /* Note+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		5E7551662729EDE400245E9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E7551692729EDE400245E9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5E75516B2729EDE400245E9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E7551712729F3F600245E9A /* NoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCell.swift; sourceTree = "<group>"; };
+		5E7551732729F55200245E9A /* NoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
+		5E7551762729F83100245E9A /* CoreDataNotes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataNotes.xcdatamodel; sourceTree = "<group>"; };
+		5E7551782729F92400245E9A /* Note+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataClass.swift"; sourceTree = "<group>"; };
+		5E7551792729F92400245E9A /* Note+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +50,8 @@
 		5E7551512729EDE300245E9A = {
 			isa = PBXGroup;
 			children = (
+				5E7551782729F92400245E9A /* Note+CoreDataClass.swift */,
+				5E7551792729F92400245E9A /* Note+CoreDataProperties.swift */,
 				5E75515C2729EDE300245E9A /* kepetrovaPW4-agaaaaaaain */,
 				5E75515B2729EDE300245E9A /* Products */,
 			);
@@ -60,6 +72,9 @@
 				5E75515F2729EDE300245E9A /* SceneDelegate.swift */,
 				5E7551612729EDE300245E9A /* ViewController.swift */,
 				5E7551632729EDE300245E9A /* Main.storyboard */,
+				5E7551752729F83100245E9A /* CoreDataNotes.xcdatamodeld */,
+				5E7551712729F3F600245E9A /* NoteCell.swift */,
+				5E7551732729F55200245E9A /* NoteViewController.swift */,
 				5E7551662729EDE400245E9A /* Assets.xcassets */,
 				5E7551682729EDE400245E9A /* LaunchScreen.storyboard */,
 				5E75516B2729EDE400245E9A /* Info.plist */,
@@ -137,9 +152,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E7551772729F83100245E9A /* CoreDataNotes.xcdatamodeld in Sources */,
+				5E75517B2729F92400245E9A /* Note+CoreDataProperties.swift in Sources */,
+				5E75517A2729F92400245E9A /* Note+CoreDataClass.swift in Sources */,
 				5E7551622729EDE300245E9A /* ViewController.swift in Sources */,
 				5E75515E2729EDE300245E9A /* AppDelegate.swift in Sources */,
 				5E7551602729EDE300245E9A /* SceneDelegate.swift in Sources */,
+				5E7551742729F55200245E9A /* NoteViewController.swift in Sources */,
+				5E7551722729F3F600245E9A /* NoteCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +359,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5E7551752729F83100245E9A /* CoreDataNotes.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5E7551762729F83100245E9A /* CoreDataNotes.xcdatamodel */,
+			);
+			currentVersion = 5E7551762729F83100245E9A /* CoreDataNotes.xcdatamodel */;
+			path = CoreDataNotes.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 5E7551522729EDE300245E9A /* Project object */;
 }
