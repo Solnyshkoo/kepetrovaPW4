@@ -29,10 +29,9 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
 
        
         // Convert Date to String
-        cell.descriptionLabel.text = note.descriptionText! + "\n" +  dateFormatter.string(from: date)
+        cell.descriptionLabel.text =  dateFormatter.string(from: date) + "\n" + note.descriptionText!
 //        cell.descriptionLabel.numberOfLines = 3
 //        //cell.descriptionLabel.text! +=
-        
         return cell
     }
     
