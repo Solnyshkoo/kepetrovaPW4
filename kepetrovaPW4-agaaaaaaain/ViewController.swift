@@ -22,20 +22,22 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         
         cell.descriptionLabel.text! += "\n"
         let date = note.creationDate
-
-        // Create Date Formatter
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "YY/MM/dd"
-
-       
-        // Convert Date to String
-        cell.descriptionLabel.text =  dateFormatter.string(from: date) + "\n" + note.descriptionText!
-//        cell.descriptionLabel.numberOfLines = 3
-//        //cell.descriptionLabel.text! +=
+        cell.descriptionLabel.text =  dateFormatter.string(from: date!) + "\n" + note.descriptionText!
+        cell.countryLabel.text = note.origin?.fullName
+        
         return cell
     }
     
     var notes: [Note] = [] {
+        didSet {
+            emptyCollectionLabel.isHidden = notes.count != 0
+            notesCollectionView.reloadData()
+        }
+    }
+    
+    var countries: [Country] = [] {
         didSet {
             emptyCollectionLabel.isHidden = notes.count != 0
             notesCollectionView.reloadData()
@@ -52,8 +54,6 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         return container.viewContext
     }()
     
-    
-
     @IBOutlet weak var emptyCollectionLabel: UILabel!
     @IBOutlet weak var notesCollectionView: UICollectionView!
     override func viewDidLoad() {
@@ -73,6 +73,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
             return
         }
         vc.outputVC = self
+        vc.countries = countries;
         navigationController?.pushViewController(vc, animated: true)
     }
     

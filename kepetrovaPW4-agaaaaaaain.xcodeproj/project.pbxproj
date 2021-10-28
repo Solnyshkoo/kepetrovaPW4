@@ -18,6 +18,8 @@
 		5E7551772729F83100245E9A /* CoreDataNotes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5E7551752729F83100245E9A /* CoreDataNotes.xcdatamodeld */; };
 		5E75517A2729F92400245E9A /* Note+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7551782729F92400245E9A /* Note+CoreDataClass.swift */; };
 		5E75517B2729F92400245E9A /* Note+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7551792729F92400245E9A /* Note+CoreDataProperties.swift */; };
+		5E75517E272A104E00245E9A /* Country+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E75517C272A104E00245E9A /* Country+CoreDataClass.swift */; };
+		5E75517F272A104E00245E9A /* Country+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E75517D272A104E00245E9A /* Country+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		5E7551762729F83100245E9A /* CoreDataNotes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataNotes.xcdatamodel; sourceTree = "<group>"; };
 		5E7551782729F92400245E9A /* Note+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataClass.swift"; sourceTree = "<group>"; };
 		5E7551792729F92400245E9A /* Note+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		5E75517C272A104E00245E9A /* Country+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Country+CoreDataClass.swift"; sourceTree = "<group>"; };
+		5E75517D272A104E00245E9A /* Country+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Country+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +54,8 @@
 		5E7551512729EDE300245E9A = {
 			isa = PBXGroup;
 			children = (
+				5E75517C272A104E00245E9A /* Country+CoreDataClass.swift */,
+				5E75517D272A104E00245E9A /* Country+CoreDataProperties.swift */,
 				5E7551782729F92400245E9A /* Note+CoreDataClass.swift */,
 				5E7551792729F92400245E9A /* Note+CoreDataProperties.swift */,
 				5E75515C2729EDE300245E9A /* kepetrovaPW4-agaaaaaaain */,
@@ -152,6 +158,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E75517F272A104E00245E9A /* Country+CoreDataProperties.swift in Sources */,
 				5E7551772729F83100245E9A /* CoreDataNotes.xcdatamodeld in Sources */,
 				5E75517B2729F92400245E9A /* Note+CoreDataProperties.swift in Sources */,
 				5E75517A2729F92400245E9A /* Note+CoreDataClass.swift in Sources */,
@@ -160,6 +167,7 @@
 				5E7551602729EDE300245E9A /* SceneDelegate.swift in Sources */,
 				5E7551742729F55200245E9A /* NoteViewController.swift in Sources */,
 				5E7551722729F3F600245E9A /* NoteCell.swift in Sources */,
+				5E75517E272A104E00245E9A /* Country+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
